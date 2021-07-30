@@ -447,4 +447,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: 54d19197cd41e0045b93676461bcab3f, type: 3}
-      propertyPath: m_Materials.Ar
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c813bf257142d7348b92aa4f4d45571b, type: 2}
+    - target: {fileID: 919132149155446097, guid: 54d19197cd41e0045b93676461bcab3f, type: 3}
+      propertyPath: m_Name
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, gui
