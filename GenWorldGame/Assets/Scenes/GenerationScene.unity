@@ -506,4 +506,19 @@ MonoBehaviour:
   Weight: 50
   Rotation: 2
   ColorsRight: 
-  ColorsFo
+  ColorsForward: 
+  ColorsLeft: 
+  ColorsBack: 
+--- !u!1 &190545528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 190545529}
+  - component: {fileID: 190545531}
+  - component: {fileID: 190545530}
+  m_Layer: 5
+  m
