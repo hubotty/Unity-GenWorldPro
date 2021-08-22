@@ -598,4 +598,17 @@ GameObject:
   m_Component:
   - component: {fileID: 206926812}
   - component: {fileID: 206926811}
-  
+  m_Layer: 0
+  m_Name: Voxel WFC Tile Placer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &206926811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObje
