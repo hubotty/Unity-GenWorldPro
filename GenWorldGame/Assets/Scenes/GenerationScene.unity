@@ -653,4 +653,17 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 226419824}
+  - component: {fileID: 226419827}
+  - component: {fileID: 226419826}
+  - component: {fileID: 226419825}
+  m_Layer: 5
+  m_Name: PRG_START_BUTTON
+  m_TagString: Classic
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags
