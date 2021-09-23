@@ -807,4 +807,17 @@ CanvasRenderer:
   m_GameObject: {fileID: 226419823}
   m_CullTransparentMesh: 1
 --- !u!1 &243453590
-G
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243453591}
+  - component: {fileID: 243453594}
+  - component: {fileID: 243453593}
+  - component: {fileID: 243453592}
+  m_Layer: 5
+  m_Name: WDG_START_BUTTON
+  m
