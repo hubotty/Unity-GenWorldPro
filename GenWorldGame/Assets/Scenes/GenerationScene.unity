@@ -1023,4 +1023,11 @@ PrefabInstance:
       value: BridgeSecond
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3030eee5e373fef41abbd42bf8664c31, type: 3}
-      propertyPath
+      propertyPath: m_TagString
+      value: Voxel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3030eee5e373fef41abbd42bf8664c31, type: 3}
+--- !u!4 &344770769 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3030eee5e3
