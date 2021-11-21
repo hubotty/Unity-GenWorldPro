@@ -1077,3 +1077,14 @@ MonoBehaviour:
   ColorsForward: 
   ColorsLeft: 
   ColorsBack: 
+--- !u!1 &360461858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 7f4cac39844f6a949935bf208878156e, type: 3}
+  m_PrefabInstance: {fileID: 1762524100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &360461860
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileI
