@@ -1193,4 +1193,15 @@ GameObject:
 --- !u!114 &364594369
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_Co
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364594368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d47c3a8a92c1b4f8b750fe551af2d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VoxelSize: 0.1
+  TileSideVoxels: 40
+  Weight: 10
