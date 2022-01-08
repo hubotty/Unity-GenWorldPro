@@ -1205,3 +1205,20 @@ MonoBehaviour:
   VoxelSize: 0.1
   TileSideVoxels: 40
   Weight: 10
+  Rotation: 2
+  ColorsRight: 
+  ColorsForward: 
+  ColorsLeft: 
+  ColorsBack: 
+--- !u!1 &416002591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416002592}
+  - component: {fileID: 416002593}
+  m_Layer: 0
+  m_Name: Weight-Directio
