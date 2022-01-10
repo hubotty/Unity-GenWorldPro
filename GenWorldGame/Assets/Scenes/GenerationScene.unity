@@ -1247,4 +1247,18 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4160025
+  m_GameObject: {fileID: 416002591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7688992e455bc1543a4852bf8645759f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitingTime: 0.05
+  TilePrefabs:
+  - {fileID: 364594369}
+  - {fileID: 858115318}
+  - {fileID: 1347728344}
+  - {fileID: 742333257}
+  - {fileID: 439312208}
+  - {fileID: 2014901822}
+  - {fileID: 123237516
