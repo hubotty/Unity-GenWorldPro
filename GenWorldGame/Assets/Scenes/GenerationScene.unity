@@ -1448,4 +1448,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 253.46002
       objectReference: {fileID: 0}
-    - target: {fileID: -867992138315481
+    - target: {fileID: -8679921383154817045, guid: d3c8f24997c7f7d428f0f479d707b6b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -229.2289
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3c8f24997c7f7d428f0f479d707b6b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - tar
