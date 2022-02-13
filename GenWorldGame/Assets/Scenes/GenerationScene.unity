@@ -1502,4 +1502,18 @@ Transform:
 --- !u!1 &439312205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: d3c8f24997c7f7d428f0f479d707b6b7, type: 3}
-  m_PrefabIn
+  m_PrefabInstance: {fileID: 439312203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &439312206
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439312205}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+ 
