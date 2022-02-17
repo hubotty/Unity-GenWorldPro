@@ -1537,3 +1537,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VoxelSize: 0.1
   TileSideVoxels: 40
+  Weight: 70
+  Rotation: 0
+  ColorsRight: 
+  ColorsForward: 
+  ColorsLeft: 
+  ColorsBack: 
+--- !u!1001 &634096375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1173756318}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8a055a92c32f0ee4880539ecc83c2fb0, type: 3}
+      proper
