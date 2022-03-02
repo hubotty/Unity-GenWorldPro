@@ -1649,4 +1649,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d47c3a8a92c1b4f8b750fe551af2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Voxel
+  VoxelSize: 0.1
+  TileSideVoxels: 40
+  Weight: 20
+  Rotation: 2
+  ColorsRight: 
+  ColorsForward: 
+  ColorsLeft: 
+  ColorsBack: 
+--- !u!1 &705507993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fil
