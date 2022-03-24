@@ -1917,4 +1917,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742333256}
-  m_Enabled
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d47c3a8a92c1b4f8b750fe551af2d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VoxelSize: 0.1
+  TileSideVoxels: 40
+  Weight: 50
+  Rotation: 2
+  ColorsRight: 
+  ColorsForward: 
+  ColorsLeft: 
+  ColorsBack: 
+--- !u!1 &858115316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID:
