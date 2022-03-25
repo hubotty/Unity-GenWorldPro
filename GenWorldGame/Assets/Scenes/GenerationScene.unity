@@ -1932,4 +1932,12 @@ MonoBehaviour:
   ColorsBack: 
 --- !u!1 &858115316 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f4cac39844f6a949935bf208878156e, type: 3}
+  m_PrefabInstance: {fileID: 1762524100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &858115317 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f4cac39844f6a949935bf208878156e, type: 3}
+  m_PrefabInstance: {fileID: 1762524100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &
