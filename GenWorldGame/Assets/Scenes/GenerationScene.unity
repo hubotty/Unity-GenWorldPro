@@ -2212,4 +2212,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: -867
+    - target: {fileID: -8679921383154817045, guid: f592ef281e5a8c24abc27e2f3973e084, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -112.93153
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f592ef281e5a8c24abc27e2f3973e084, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 253.46002
+      objectReference: {fileID: 
