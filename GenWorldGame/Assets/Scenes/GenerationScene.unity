@@ -2265,4 +2265,12 @@ PrefabInstance:
       value: Voxel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 
+  m_SourcePrefab: {fileID: 100100000, guid: f592ef281e5a8c24abc27e2f3973e084, type: 3}
+--- !u!4 &1108579356 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f592ef281e5a8c24abc27e2f3973e084, type: 3}
+  m_PrefabInstance: {fileID: 1108579355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1108579357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID
