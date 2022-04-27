@@ -2364,4 +2364,19 @@ Transform:
 --- !u!1 &1209742371
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourc
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1209742373}
+  - component: {fileID: 1209742372}
+  m_Layer: 0
+  m_Name: Classic Pseudo-Random Voxel Generation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1209742372
+MonoBe
