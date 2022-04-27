@@ -2390,4 +2390,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa08d99ed6d48e4396b4bb54399dc42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waiting
+  waitingTime: 0.1
+  TilePrefabs:
+  - {fileID: 364594369}
+  - {fileID: 858115318}
+  - {fileID: 1347728344}
+  - {fileID: 742333257}
+  - {fileID: 439312208}
+  - {fileID: 2014901822}
+  - {fileID: 1232375163}
+  - {fileID: 344770773}
+  - {fileID: 1573467255}
+  - {fileID: 1108579360}
+  - {fileID: 178578676}
+  - {fileID: 1587489957}
+  - {fileID: 98311380}
+  - 
