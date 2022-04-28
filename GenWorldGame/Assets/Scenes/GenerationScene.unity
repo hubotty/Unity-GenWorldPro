@@ -2405,4 +2405,16 @@ MonoBehaviour:
   - {fileID: 178578676}
   - {fileID: 1587489957}
   - {fileID: 98311380}
-  - 
+  - {fileID: 1301275212}
+  - {fileID: 634096380}
+  - {fileID: 1336732910}
+  MapSize: {x: 20, y: 20}
+--- !u!4 &1209742373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209742371}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  
