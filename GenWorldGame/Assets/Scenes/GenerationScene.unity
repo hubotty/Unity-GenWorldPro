@@ -2540,4 +2540,17 @@ MonoBehaviour:
 --- !u!1 &1253154599
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1253154600}
+  - component: {fileID: 1253154603}
+  - component: {fileID: 1253154602}
+  - component: {fileID: 1253154601}
+  - component: {fileID: 1253154604}
+  m_Layer: 5
+  m_Name: CLEAR_SCENE_BUTTON
+  m_TagString: Classic
+  m_Icon: {
