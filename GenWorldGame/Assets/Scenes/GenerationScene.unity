@@ -2686,4 +2686,13 @@ MonoBehaviour:
 --- !u!1001 &1301275207
 PrefabInstance:
   m_ObjectHideFlags: 0
-  serializedVersion:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1173756318}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: bcad76fd2022bd741b6f96067f1956be, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bcad76fd2022bd741b6f96067f1956be, type: 3}
+      prop
