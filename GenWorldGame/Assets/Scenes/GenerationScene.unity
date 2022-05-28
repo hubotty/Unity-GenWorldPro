@@ -2847,4 +2847,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e41f4131ac3750849b428a4cb54650b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReferen
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: e41f4131ac3750849b428a4cb54650b1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c813bf257142d7348b92aa4f4d45571b, type: 2}
+    - target: {fileID: 919132149155446097, guid: e41f4131ac3750849b428a4cb54650b1, type: 3}
+      propertyPath: m_Name
+      value: Wal
