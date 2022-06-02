@@ -2890,4 +2890,15 @@ MeshCollider:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e41f4131ac3750849b428a4cb54650b1, type: 3}
   m_PrefabInstance: {fileID: 1336732905}
-  m_PrefabAsset: {file
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1336732910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336732909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d47c3a8a92c1b4f8b750fe551af2d1, type: 3}
+  m_Na
