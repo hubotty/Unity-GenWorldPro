@@ -3023,4 +3023,18 @@ MonoBehaviour:
   Rotation: 0
   ColorsRight: 
   ColorsForward: 
-  
+  ColorsLeft: 
+  ColorsBack: 
+--- !u!1 &1531351429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531351430}
+  - component: {fileID: 1531351432}
+  - component: {fileID: 1531351431}
+  m_Layer: 5
+  m_Name:
