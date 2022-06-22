@@ -3167,4 +3167,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Voxel
       objectReference: {fileID: 0}
-    m
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6132cc0746ec8374ebf58f3aa2c254d4, type: 3}
+--- !u!4 &1573467251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6132cc0746ec8374ebf58f3aa2c254d4, type: 3}
+  m_PrefabInstance: {fileID: 1573467250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1573467252 strippe
