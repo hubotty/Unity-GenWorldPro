@@ -3254,4 +3254,12 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6e34e30362ac164ab52b5d5f106b606, type: 3}
-      prop
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6e34e30362ac164ab52b5d5f106b606, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6e34e30362ac164ab52b5d5f106b606, type: 3}
+      pr
