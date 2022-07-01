@@ -3334,4 +3334,17 @@ MonoBehaviour:
   ColorsBack: 
 --- !u!1 &1670814196
 GameObject:
-  m_ObjectHideFlags
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670814197}
+  - component: {fileID: 1670814201}
+  - component: {fileID: 1670814200}
+  - component: {fileID: 1670814199}
+  - component: {fileID: 1670814198}
+  m_Layer: 5
+  m_Name: EXIT_BUTTON
+  m_TagString: C
