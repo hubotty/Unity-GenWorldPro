@@ -3549,4 +3549,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVers
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1956051846}
+  - component: {fileID: 1956051845}
+  - component: {fileID: 1956051844}
+  - component: {fileID: 1956051843}
+  m_Layer: 5
+  m_Name: Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1956051843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m
