@@ -3656,4 +3656,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1173756318}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: d03f2aa77fc16
+    - target: {fileID: -8679921383154817045, guid: d03f2aa77fc169e4e9a61203a262e324, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d03f2aa77fc169e4e9a61203a262e324, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -140.03154
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d03f2aa77fc169e4e9a612
