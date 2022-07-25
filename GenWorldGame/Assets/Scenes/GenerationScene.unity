@@ -3770,4 +3770,19 @@ GameObject:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
-  m_Compon
+  m_Component:
+  - component: {fileID: 2032993205}
+  - component: {fileID: 2032993207}
+  - component: {fileID: 2032993206}
+  m_Layer: 5
+  m_Name: INSTRUCTION_TEXT_ONE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2032993205
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance:
