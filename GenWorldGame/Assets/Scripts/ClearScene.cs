@@ -16,4 +16,15 @@ public class ClearScene : MonoBehaviour
         GameObject[] GameObjects = GameObject.FindGameObjectsWithTag("Voxel");
 
         for (int i = 0; i < GameObjects.Length; i++)
-       
+        {
+                Destroy(GameObjects[i]);
+        }
+
+    }
+
+    //  Quit from game scene
+    public void QuitGameScene()
+    {
+        Application.Quit();
+    }
+}
