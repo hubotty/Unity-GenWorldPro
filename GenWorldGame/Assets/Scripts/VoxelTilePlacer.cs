@@ -27,4 +27,16 @@ public class VoxelTilePlacer : MonoBehaviour
 
         foreach(VoxelTile tilePrefab in TilePrefabs)
         {
-            tilePrefab.C
+            tilePrefab.CalculateSidesColors();
+        }
+
+        int countBeforeAdding = TilePrefabs.Count;
+        for (int i = 0; i < countBeforeAdding; i++)
+        {
+            VoxelTile clone;
+            switch (TilePrefabs[i].Rotation)
+            {
+                case VoxelTile.RotationType.OnlyRotation:
+                    break;
+
+                case VoxelTile.RotationTyp
