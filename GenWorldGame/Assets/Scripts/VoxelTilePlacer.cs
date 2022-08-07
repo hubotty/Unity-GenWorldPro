@@ -16,4 +16,15 @@ public class VoxelTilePlacer : MonoBehaviour
     //  Variable for the size of our map
     public Vector2Int MapSize = new Vector2Int(x: 10, y: 10);
 
-    //  Two-dimensional array of tiles (We sav
+    //  Two-dimensional array of tiles (We save here already spawned tiles)
+    private VoxelTile[,] spawnedTiles;
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        //  Initialize the array to fit the map 
+        spawnedTiles = new VoxelTile[MapSize.x, MapSize.y];
+
+        foreach(VoxelTile tilePrefab in TilePrefabs)
+        {
+            tilePrefab.C
