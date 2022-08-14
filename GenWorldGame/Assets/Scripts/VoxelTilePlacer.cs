@@ -54,4 +54,11 @@ public class VoxelTilePlacer : MonoBehaviour
 
                     clone = Instantiate(TilePrefabs[i], TilePrefabs[i].transform.position + Vector3.right, Quaternion.identity);
                     clone.Rotate90();
-         
+                    TilePrefabs.Add(clone);
+
+                    clone = Instantiate(TilePrefabs[i], TilePrefabs[i].transform.position + Vector3.right * 2, Quaternion.identity);
+                    clone.Rotate90();
+                    clone.Rotate90();
+                    TilePrefabs.Add(clone);
+
+                    clone = Instantiate(TilePrefabs[i], TilePrefabs[i].transform.posi
