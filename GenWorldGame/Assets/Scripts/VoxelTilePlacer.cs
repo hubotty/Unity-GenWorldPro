@@ -72,4 +72,16 @@ public class VoxelTilePlacer : MonoBehaviour
             }
         }
 
-       
+        //  Calling the map generation function 
+        StartCoroutine(routine: Generate());
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+        //  Restarting our generation when pressing the d key
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            StopAllCoroutines();
+
+            foreach(VoxelTile spawnedTile in spawnedTiles)
