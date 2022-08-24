@@ -85,3 +85,18 @@ public class VoxelTilePlacer : MonoBehaviour
             StopAllCoroutines();
 
             foreach(VoxelTile spawnedTile in spawnedTiles)
+            {
+                if (spawnedTile != null) Destroy(spawnedTile.gameObject);
+            }
+
+            StartCoroutine(routine: Generate());
+        }
+    }
+
+    //  This function generates the whole map
+    public IEnumerator Generate()
+    {
+        for (int x = 1; x < MapSize.x - 1; x++)
+        {
+            for (int y = 1; y < MapSize.y - 1; y++)
+ 
