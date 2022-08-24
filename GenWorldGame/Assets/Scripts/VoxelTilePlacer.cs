@@ -99,4 +99,20 @@ public class VoxelTilePlacer : MonoBehaviour
         for (int x = 1; x < MapSize.x - 1; x++)
         {
             for (int y = 1; y < MapSize.y - 1; y++)
- 
+            {
+                yield return new WaitForSeconds(0.02f);
+
+                PlaceTile(x, y);
+            }
+        }
+
+        yield return new WaitForSeconds(0.8f);
+        foreach (VoxelTile spawnedTile in spawnedTiles)
+        {
+            if (spawnedTile != null) Destroy(spawnedTile.gameObject);
+        }
+
+        StartCoroutine(Generate());
+    }
+
+    //  Places a tile at a gi
