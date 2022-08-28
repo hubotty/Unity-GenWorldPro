@@ -137,4 +137,13 @@ public class VoxelTilePlacer : MonoBehaviour
         //  Choose a random tile from those that suit us
         //  Variable for saving a randomly selected tile from the available ones 
         VoxelTile selectedTile = GetRandomTile(availableTiles);
-        Vector3 position = selectedTile.VoxelSize * 
+        Vector3 position = selectedTile.VoxelSize * selectedTile.TileSideVoxels * new Vector3(x, y: 0, z: y);
+        spawnedTiles[x,y] = Instantiate(selectedTile, position, selectedTile.transform.rotation);
+    }
+
+    private VoxelTile GetRandomTile(List<VoxelTile> availableTiles)
+    {
+        List<float> chances = new List<float>();
+        for( int i = 0; i < availableTiles.Count; i++)
+        {
+            chances.Add
