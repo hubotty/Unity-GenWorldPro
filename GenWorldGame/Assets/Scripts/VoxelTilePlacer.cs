@@ -127,4 +127,14 @@ public class VoxelTilePlacer : MonoBehaviour
                 CanAppendTile(existingTile: spawnedTiles[x - 1, y], tileToAppend: tilePrefab, Direction.Right) &&
                 CanAppendTile(existingTile: spawnedTiles[x - 1, y], tileToAppend: tilePrefab, Direction.Back) &&
                 CanAppendTile(existingTile: spawnedTiles[x - 1, y], tileToAppend: tilePrefab, Direction.Forward))
-         
+            {
+                availableTiles.Add(tilePrefab);
+            }
+        }
+
+        if (availableTiles.Count == 0) return;
+
+        //  Choose a random tile from those that suit us
+        //  Variable for saving a randomly selected tile from the available ones 
+        VoxelTile selectedTile = GetRandomTile(availableTiles);
+        Vector3 position = selectedTile.VoxelSize * 
