@@ -115,4 +115,12 @@ public class VoxelTilePlacer : MonoBehaviour
         StartCoroutine(Generate());
     }
 
-    //  Places a tile at a gi
+    //  Places a tile at a given location
+    private void PlaceTile(int x, int y)
+    {
+        //  We add a list of tiles that are available (which we can put in this place)
+        List<VoxelTile> availableTiles = new List<VoxelTile>();
+
+        foreach (VoxelTile tilePrefab in TilePrefabs)
+        {
+            if( CanAppendTile(existingTile: spawnedTiles[x-1,y], tileToAppen
