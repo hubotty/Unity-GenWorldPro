@@ -123,4 +123,8 @@ public class VoxelTilePlacer : MonoBehaviour
 
         foreach (VoxelTile tilePrefab in TilePrefabs)
         {
-            if( CanAppendTile(existingTile: spawnedTiles[x-1,y], tileToAppen
+            if( CanAppendTile(existingTile: spawnedTiles[x-1,y], tileToAppend: tilePrefab, Direction.Left) &&
+                CanAppendTile(existingTile: spawnedTiles[x - 1, y], tileToAppend: tilePrefab, Direction.Right) &&
+                CanAppendTile(existingTile: spawnedTiles[x - 1, y], tileToAppend: tilePrefab, Direction.Back) &&
+                CanAppendTile(existingTile: spawnedTiles[x - 1, y], tileToAppend: tilePrefab, Direction.Forward))
+         
