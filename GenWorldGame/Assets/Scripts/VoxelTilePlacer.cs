@@ -146,4 +146,20 @@ public class VoxelTilePlacer : MonoBehaviour
         List<float> chances = new List<float>();
         for( int i = 0; i < availableTiles.Count; i++)
         {
-            chances.Add
+            chances.Add(availableTiles[i].Weight);
+        }
+
+        float value = Random.Range(0, chances.Sum());
+        float sum = 0;
+
+        for(int i = 0; i < chances.Count; i++)
+        {
+            sum += chances[i];
+            if(value < sum)
+            {
+                return availableTiles[i];
+            }
+        }
+
+        return availableTiles[availableTiles.Count - 1];
+    }
