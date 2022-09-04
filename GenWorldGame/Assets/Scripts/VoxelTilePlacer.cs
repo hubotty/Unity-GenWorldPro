@@ -171,4 +171,12 @@ public class VoxelTilePlacer : MonoBehaviour
 
         if (direction == Direction.Right)
         {
-            return Enumerable.SequenceEqual(existingTile.ColorsRight, tileToAppend.ColorsLeft); //  Compare two a
+            return Enumerable.SequenceEqual(existingTile.ColorsRight, tileToAppend.ColorsLeft); //  Compare two arrays
+        }
+        else if (direction == Direction.Left)
+        {
+            return Enumerable.SequenceEqual(existingTile.ColorsLeft, tileToAppend.ColorsRight); //  Compare two arrays
+        }
+        else if (direction == Direction.Forward)
+        {
+            return Enumerable.SequenceEqual(existingTile.ColorsForward, tileToAppend.ColorsBa
