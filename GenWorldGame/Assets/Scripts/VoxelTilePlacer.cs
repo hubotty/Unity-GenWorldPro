@@ -163,3 +163,12 @@ public class VoxelTilePlacer : MonoBehaviour
 
         return availableTiles[availableTiles.Count - 1];
     }
+
+    //  Function to check if we can add a tile
+    private bool CanAppendTile(VoxelTile existingTile, VoxelTile tileToAppend, Direction direction)
+    {
+        if (existingTile == null) return true;
+
+        if (direction == Direction.Right)
+        {
+            return Enumerable.SequenceEqual(existingTile.ColorsRight, tileToAppend.ColorsLeft); //  Compare two a
