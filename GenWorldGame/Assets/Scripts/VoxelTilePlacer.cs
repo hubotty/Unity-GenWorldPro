@@ -179,4 +179,12 @@ public class VoxelTilePlacer : MonoBehaviour
         }
         else if (direction == Direction.Forward)
         {
-            return Enumerable.SequenceEqual(existingTile.ColorsForward, tileToAppend.ColorsBa
+            return Enumerable.SequenceEqual(existingTile.ColorsForward, tileToAppend.ColorsBack); //  Compare two arrays
+        }
+        else if (direction == Direction.Back)
+        {
+            return Enumerable.SequenceEqual(existingTile.ColorsBack, tileToAppend.ColorsForward); //  Compare two arrays
+        }
+        else
+        {
+            throw new ArgumentException(message: "Wrong direction value, should be Vector3.le
