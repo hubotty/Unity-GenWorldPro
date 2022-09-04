@@ -187,4 +187,8 @@ public class VoxelTilePlacer : MonoBehaviour
         }
         else
         {
-            throw new ArgumentException(message: "Wrong direction value, should be Vector3.le
+            throw new ArgumentException(message: "Wrong direction value, should be Vector3.left/right/back/forward",
+                nameof(direction));
+        }
+    }
+}
