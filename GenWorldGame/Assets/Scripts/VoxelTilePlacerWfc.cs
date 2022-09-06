@@ -11,4 +11,17 @@ public class VoxelTilePlacerWfc : MonoBehaviour
 
     private VoxelTile[,] spawnedTiles;
 
-    private Queue<Vector2Int> recalcPossibleTilesQueue = new Queue<Vector2Int>(
+    private Queue<Vector2Int> recalcPossibleTilesQueue = new Queue<Vector2Int>();
+    private List<VoxelTile>[,] possibleTiles;
+
+    private void Start()
+    {
+        spawnedTiles = new VoxelTile[MapSize.x, MapSize.y];
+
+        foreach (VoxelTile tilePrefab in TilePrefabs)
+        {
+            tilePrefab.CalculateSidesColors();
+        }
+
+        int countBeforeAdding = TilePrefabs.Count;
+        for (int i = 0; i < countBeforeAdding;
