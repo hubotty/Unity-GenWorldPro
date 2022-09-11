@@ -43,4 +43,10 @@ public class VoxelTilePlacerWfc : MonoBehaviour
                     break;
 
                 case VoxelTile.RotationType.FourRotations:
-              
+                    TilePrefabs[i].Weight /= 4;
+                    if (TilePrefabs[i].Weight <= 0) TilePrefabs[i].Weight = 1;
+
+                    clone = Instantiate(TilePrefabs[i], TilePrefabs[i].transform.position + Vector3.right,
+                        Quaternion.identity);
+                    clone.Rotate90();
+                    TilePrefab
