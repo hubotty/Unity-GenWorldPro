@@ -57,4 +57,12 @@ public class VoxelTilePlacerWfc : MonoBehaviour
                     clone.Rotate90();
                     TilePrefabs.Add(clone);
 
-                    clone = Instantiate(TilePrefabs[i], TilePrefabs
+                    clone = Instantiate(TilePrefabs[i], TilePrefabs[i].transform.position + Vector3.right * 3,
+                        Quaternion.identity);
+                    clone.Rotate90();
+                    clone.Rotate90();
+                    clone.Rotate90();
+                    TilePrefabs.Add(clone);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeE
