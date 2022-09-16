@@ -65,4 +65,26 @@ public class VoxelTilePlacerWfc : MonoBehaviour
                     TilePrefabs.Add(clone);
                     break;
                 default:
-                    throw new ArgumentOutOfRangeE
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        Generate();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            foreach (VoxelTile spawnedTile in spawnedTiles)
+            {
+                if (spawnedTile != null) Destroy(spawnedTile.gameObject);
+            }
+
+            Generate();
+        }
+    }
+
+    private void Generate()
+    {
+        possibleTiles =
