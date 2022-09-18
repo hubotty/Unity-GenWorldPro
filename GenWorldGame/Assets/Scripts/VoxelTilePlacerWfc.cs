@@ -99,4 +99,12 @@ public class VoxelTilePlacerWfc : MonoBehaviour
                 possibleTiles[x, y] = new List<VoxelTile>(TilePrefabs);
             }
 
-            VoxelTile tileInCenter = G
+            VoxelTile tileInCenter = GetRandomTile(TilePrefabs);
+            possibleTiles[MapSize.x / 2, MapSize.y / 2] = new List<VoxelTile> {tileInCenter};
+
+            recalcPossibleTilesQueue.Clear();
+            EnqueueNeighboursToRecalc(new Vector2Int(MapSize.x / 2, MapSize.y / 2));
+
+            bool success = GenerateAllPossibleTiles();
+            
+            if (success) break;
