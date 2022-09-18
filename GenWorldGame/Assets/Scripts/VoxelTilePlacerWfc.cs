@@ -108,3 +108,19 @@ public class VoxelTilePlacerWfc : MonoBehaviour
             bool success = GenerateAllPossibleTiles();
             
             if (success) break;
+        }
+
+        PlaceAllTiles();
+    }
+
+    private bool GenerateAllPossibleTiles()
+    {
+        int maxIterations = MapSize.x * MapSize.y;
+        int iterations = 0;
+        int backtracks = 0;
+        
+        while (iterations++ < maxIterations)
+        {
+            int maxInnerIterations = 500;
+            int innerIterations = 0;
+         
