@@ -87,4 +87,16 @@ public class VoxelTilePlacerWfc : MonoBehaviour
 
     private void Generate()
     {
-        possibleTiles =
+        possibleTiles = new List<VoxelTile>[MapSize.x, MapSize.y];
+
+        int maxAttempts = 10;
+        int attempts = 0;
+        while (attempts++ < maxAttempts)
+        {
+            for (int x = 0; x < MapSize.x; x++)
+            for (int y = 0; y < MapSize.y; y++)
+            {
+                possibleTiles[x, y] = new List<VoxelTile>(TilePrefabs);
+            }
+
+            VoxelTile tileInCenter = G
