@@ -123,4 +123,9 @@ public class VoxelTilePlacerWfc : MonoBehaviour
         {
             int maxInnerIterations = 500;
             int innerIterations = 0;
-         
+            
+            while (recalcPossibleTilesQueue.Count > 0 && innerIterations++ < maxInnerIterations)
+            {
+                Vector2Int position = recalcPossibleTilesQueue.Dequeue();
+                if (position.x == 0 || position.y == 0 ||
+                    position.x == MapSize.x - 1 || position.y == MapSize.y - 1)
