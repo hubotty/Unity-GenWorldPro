@@ -139,4 +139,9 @@ public class VoxelTilePlacerWfc : MonoBehaviour
 
                 if (countRemoved > 0) EnqueueNeighboursToRecalc(position);
 
-                if (possibleTi
+                if (possibleTilesHere.Count == 0)
+                {
+                    possibleTilesHere.AddRange(TilePrefabs);
+                    possibleTiles[position.x + 1, position.y] = new List<VoxelTile>(TilePrefabs);
+                    possibleTiles[position.x - 1, position.y] = new List<VoxelTile>(TilePrefabs);
+                    possibleTiles[position.x, position.y + 1] = new L
