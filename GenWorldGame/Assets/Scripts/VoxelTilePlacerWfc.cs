@@ -129,3 +129,14 @@ public class VoxelTilePlacerWfc : MonoBehaviour
                 Vector2Int position = recalcPossibleTilesQueue.Dequeue();
                 if (position.x == 0 || position.y == 0 ||
                     position.x == MapSize.x - 1 || position.y == MapSize.y - 1)
+                {
+                    continue;
+                }
+
+                List<VoxelTile> possibleTilesHere = possibleTiles[position.x, position.y];
+
+                int countRemoved = possibleTilesHere.RemoveAll(t => !IsTilePossible(t, position));
+
+                if (countRemoved > 0) EnqueueNeighboursToRecalc(position);
+
+                if (possibleTi
