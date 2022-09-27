@@ -144,4 +144,14 @@ public class VoxelTilePlacerWfc : MonoBehaviour
                     possibleTilesHere.AddRange(TilePrefabs);
                     possibleTiles[position.x + 1, position.y] = new List<VoxelTile>(TilePrefabs);
                     possibleTiles[position.x - 1, position.y] = new List<VoxelTile>(TilePrefabs);
-                    possibleTiles[position.x, position.y + 1] = new L
+                    possibleTiles[position.x, position.y + 1] = new List<VoxelTile>(TilePrefabs);
+                    possibleTiles[position.x, position.y - 1] = new List<VoxelTile>(TilePrefabs);
+                    
+                    EnqueueNeighboursToRecalc(position);
+
+                    backtracks++;
+                }
+            }
+            if (innerIterations == maxInnerIterations) break;
+
+            List<VoxelTil
