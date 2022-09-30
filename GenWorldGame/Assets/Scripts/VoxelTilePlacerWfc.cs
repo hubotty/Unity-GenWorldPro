@@ -154,4 +154,12 @@ public class VoxelTilePlacerWfc : MonoBehaviour
             }
             if (innerIterations == maxInnerIterations) break;
 
-            List<VoxelTil
+            List<VoxelTile> maxCountTile = possibleTiles[1, 1];
+            Vector2Int maxCountTilePosition = new Vector2Int(1, 1);
+
+            for (int x = 1; x < MapSize.x - 1; x++)
+            for (int y = 1; y < MapSize.y - 1; y++)
+            {
+                if (possibleTiles[x, y].Count > maxCountTile.Count)
+                {
+                    maxCountTile = possibleTiles[x
