@@ -162,4 +162,15 @@ public class VoxelTilePlacerWfc : MonoBehaviour
             {
                 if (possibleTiles[x, y].Count > maxCountTile.Count)
                 {
-                    maxCountTile = possibleTiles[x
+                    maxCountTile = possibleTiles[x, y];
+                    maxCountTilePosition = new Vector2Int(x, y);
+                }
+            }
+
+            if (maxCountTile.Count == 1)
+            {
+                Debug.Log($"Generated for {iterations} iterations, with {backtracks} backtracks");
+                return true;
+            }
+
+            VoxelTile tileToCollapse = GetRandomTile(maxCoun
