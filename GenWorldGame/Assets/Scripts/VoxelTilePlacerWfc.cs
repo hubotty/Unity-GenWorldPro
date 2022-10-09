@@ -173,4 +173,13 @@ public class VoxelTilePlacerWfc : MonoBehaviour
                 return true;
             }
 
-            VoxelTile tileToCollapse = GetRandomTile(maxCoun
+            VoxelTile tileToCollapse = GetRandomTile(maxCountTile);
+            possibleTiles[maxCountTilePosition.x, maxCountTilePosition.y] = new List<VoxelTile> {tileToCollapse};
+            EnqueueNeighboursToRecalc(maxCountTilePosition);
+        }
+        
+        Debug.Log($"Failed, run out of iterations with {backtracks} backtracks");
+        return false;
+    }
+
+    private bool IsTilePossible(VoxelTile ti
