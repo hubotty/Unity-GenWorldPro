@@ -189,4 +189,12 @@ public class VoxelTilePlacerWfc : MonoBehaviour
         if (isAllRightImpossible) return false;
         
         bool isAllLeftImpossible = possibleTiles[position.x + 1, position.y]
-            .All(leftTile => !CanAppendTile(tile, leftTile, Direc
+            .All(leftTile => !CanAppendTile(tile, leftTile, Direction.Left));
+        if (isAllLeftImpossible) return false;
+        
+        bool isAllForwardImpossible = possibleTiles[position.x, position.y - 1]
+            .All(fwdTile => !CanAppendTile(tile, fwdTile, Direction.Forward));
+        if (isAllForwardImpossible) return false;
+        
+        bool isAllBackImpossible = possibleTiles[position.x, position.y + 1]
+            .All(backT
