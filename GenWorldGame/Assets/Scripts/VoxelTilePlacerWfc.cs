@@ -182,4 +182,11 @@ public class VoxelTilePlacerWfc : MonoBehaviour
         return false;
     }
 
-    private bool IsTilePossible(VoxelTile ti
+    private bool IsTilePossible(VoxelTile tile, Vector2Int position)
+    {
+        bool isAllRightImpossible = possibleTiles[position.x - 1, position.y]
+            .All(rightTile => !CanAppendTile(tile, rightTile, Direction.Right));
+        if (isAllRightImpossible) return false;
+        
+        bool isAllLeftImpossible = possibleTiles[position.x + 1, position.y]
+            .All(leftTile => !CanAppendTile(tile, leftTile, Direc
