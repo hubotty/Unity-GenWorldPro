@@ -212,4 +212,9 @@ public class VoxelTilePlacerWfc : MonoBehaviour
         }
     }
 
-    private void Enqu
+    private void EnqueueNeighboursToRecalc(Vector2Int position)
+    {
+        recalcPossibleTilesQueue.Enqueue(new Vector2Int(position.x + 1, position.y));
+        recalcPossibleTilesQueue.Enqueue(new Vector2Int(position.x - 1, position.y));
+        recalcPossibleTilesQueue.Enqueue(new Vector2Int(position.x, position.y + 1));
+        recalcPossibleTilesQueue.Enqueue(new Vec
