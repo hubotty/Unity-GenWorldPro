@@ -217,4 +217,13 @@ public class VoxelTilePlacerWfc : MonoBehaviour
         recalcPossibleTilesQueue.Enqueue(new Vector2Int(position.x + 1, position.y));
         recalcPossibleTilesQueue.Enqueue(new Vector2Int(position.x - 1, position.y));
         recalcPossibleTilesQueue.Enqueue(new Vector2Int(position.x, position.y + 1));
-        recalcPossibleTilesQueue.Enqueue(new Vec
+        recalcPossibleTilesQueue.Enqueue(new Vector2Int(position.x, position.y - 1));
+    }
+
+    private void PlaceTile(int x, int y)
+    {
+        if (possibleTiles[x, y].Count == 0) return;
+
+        VoxelTile selectedTile = GetRandomTile(possibleTiles[x, y]);
+        Vector3 position = selectedTile.VoxelSize * selectedTile.TileSideVoxels * new Vector3(x, 0, y);
+        spawnedTiles[x, y] = Instantiate(selectedTile, posit
