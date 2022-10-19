@@ -226,4 +226,16 @@ public class VoxelTilePlacerWfc : MonoBehaviour
 
         VoxelTile selectedTile = GetRandomTile(possibleTiles[x, y]);
         Vector3 position = selectedTile.VoxelSize * selectedTile.TileSideVoxels * new Vector3(x, 0, y);
-        spawnedTiles[x, y] = Instantiate(selectedTile, posit
+        spawnedTiles[x, y] = Instantiate(selectedTile, position, selectedTile.transform.rotation);
+    }
+
+    private VoxelTile GetRandomTile(List<VoxelTile> availableTiles)
+    {
+        List<float> chances = new List<float>();
+        for (int i = 0; i < availableTiles.Count; i++)
+        {
+            chances.Add(availableTiles[i].Weight);
+        }
+
+        float value = Random.Range(0, chances.Sum());
+  
