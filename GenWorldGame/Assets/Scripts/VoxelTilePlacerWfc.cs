@@ -238,4 +238,18 @@ public class VoxelTilePlacerWfc : MonoBehaviour
         }
 
         float value = Random.Range(0, chances.Sum());
-  
+        float sum = 0;
+
+        for (int i = 0; i < chances.Count; i++)
+        {
+            sum += chances[i];
+            if (value < sum)
+            {
+                return availableTiles[i];
+            }
+        }
+
+        return availableTiles[availableTiles.Count - 1];
+    }
+
+    private bool CanAppendTile(VoxelTile existingTile, VoxelTile tileToAppend, Direction direc
