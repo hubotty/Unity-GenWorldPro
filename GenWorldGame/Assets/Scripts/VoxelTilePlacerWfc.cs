@@ -252,4 +252,16 @@ public class VoxelTilePlacerWfc : MonoBehaviour
         return availableTiles[availableTiles.Count - 1];
     }
 
-    private bool CanAppendTile(VoxelTile existingTile, VoxelTile tileToAppend, Direction direc
+    private bool CanAppendTile(VoxelTile existingTile, VoxelTile tileToAppend, Direction direction)
+    {
+        if (existingTile == null) return true;
+
+        if (direction == Direction.Right)
+        {
+            return Enumerable.SequenceEqual(existingTile.ColorsRight, tileToAppend.ColorsLeft);
+        }
+        else if (direction == Direction.Left)
+        {
+            return Enumerable.SequenceEqual(existingTile.ColorsLeft, tileToAppend.ColorsRight);
+        }
+        else 
