@@ -264,4 +264,14 @@ public class VoxelTilePlacerWfc : MonoBehaviour
         {
             return Enumerable.SequenceEqual(existingTile.ColorsLeft, tileToAppend.ColorsRight);
         }
-        else 
+        else if (direction == Direction.Forward)
+        {
+            return Enumerable.SequenceEqual(existingTile.ColorsForward, tileToAppend.ColorsBack);
+        }
+        else if (direction == Direction.Back)
+        {
+            return Enumerable.SequenceEqual(existingTile.ColorsBack, tileToAppend.ColorsForward);
+        }
+        else
+        {
+            throw new ArgumentEx
