@@ -1,0 +1,24 @@
+
+# MagicaVoxel @ Ephtracy
+
+# group
+o 
+
+# material
+mtllib BlockSecond.mtl
+usemtl palette
+
+# normals
+vn -1 0 0
+vn 1 0 0
+vn 0 0 1
+vn 0 0 -1
+vn 0 -1 0
+vn 0 1 0
+
+# texcoords
+vt 0.958984 0.5
+vt 0.970703 0.5
+
+# verts
+v -2 0 2
