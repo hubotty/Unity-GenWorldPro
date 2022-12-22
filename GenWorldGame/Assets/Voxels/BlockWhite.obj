@@ -1,0 +1,16 @@
+# MagicaVoxel @ Ephtracy
+
+# group
+o 
+
+# material
+mtllib BlockWhite.mtl
+usemtl palette
+
+# normals
+vn -1 0 0
+vn 1 0 0
+vn 0 0 1
+vn 0 0 -1
+vn 0 -1 0
+vn 0
