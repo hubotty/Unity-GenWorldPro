@@ -1,2 +1,19 @@
 fileFormatVersion: 2
-guid: ca324f3697eb3a44695b7ec6ee0
+guid: ca324f3697eb3a44695b7ec6ee00441e
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    
