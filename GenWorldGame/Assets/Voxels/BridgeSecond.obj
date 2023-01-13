@@ -1,0 +1,39 @@
+
+# MagicaVoxel @ Ephtracy
+
+# group
+o 
+
+# material
+mtllib BridgeSecond.mtl
+usemtl palette
+
+# normals
+vn -1 0 0
+vn 1 0 0
+vn 0 0 1
+vn 0 0 -1
+vn 0 -1 0
+vn 0 1 0
+
+# texcoords
+vt 0.958984 0.5
+vt 0.982422 0.5
+
+# verts
+v -2 0 2
+v -2 0 -2
+v -2 0.8 2
+v -2 0.8 0.6
+v -2 0.8 -0.6
+v -2 0.8 -2
+v -2 1.8 0.6
+v -2 1.8 -0.6
+v 2 0 2
+v 2 0 -2
+v 2 0.8 2
+v 2 0.8 0.6
+v 2 0.8 -0.6
+v 2 0.8 -2
+v 2 1.8 0.6
+v 2 1.8 -0.6
