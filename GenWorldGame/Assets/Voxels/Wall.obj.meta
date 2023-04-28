@@ -2,4 +2,19 @@ fileFormatVersion: 2
 guid: bcad76fd2022bd741b6f96067f1956be
 ModelImporter:
   serializedVersion: 20200
-  inter
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    anim
