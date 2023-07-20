@@ -26,4 +26,13 @@ Physics2DSettings:
     m_InterpolationPosesPerJob: 100
     m_NewContactsPerJob: 30
     m_CollideContactsPerJob: 100
-    m_ClearFlagsPer
+    m_ClearFlagsPerJob: 200
+    m_ClearBodyForcesPerJob: 200
+    m_SyncDiscreteFixturesPerJob: 50
+    m_SyncContinuousFixturesPerJob: 50
+    m_FindNearestContactsPerJob: 100
+    m_UpdateTriggerContactsPerJob: 100
+    m_IslandSolverCostThreshold: 100
+    m_IslandSolverBodyCostScale: 1
+    m_IslandSolverContactCostScale: 10
+    m_IslandSolverJoi
