@@ -42,4 +42,11 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="ChangeListElement" substitutionGroup="engine:VisualElement" xmlns:q2="Unity.Cloud.Collaborate.Components.Change
+  <xs:element name="ChangeListElement" substitutionGroup="engine:VisualElement" xmlns:q2="Unity.Cloud.Collaborate.Components.ChangeListEntries" type="q2:ChangeListElementType" />
+  <xs:complexType name="ConflictedChangeListElementType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default=
