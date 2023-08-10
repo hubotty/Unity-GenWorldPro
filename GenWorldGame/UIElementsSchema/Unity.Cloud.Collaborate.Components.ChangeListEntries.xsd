@@ -63,4 +63,9 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="ConflictedChangeListElement
+  <xs:element name="ConflictedChangeListElement" substitutionGroup="engine:VisualElement" xmlns:q3="Unity.Cloud.Collaborate.Components.ChangeListEntries" type="q3:ConflictedChangeListElementType" />
+  <xs:complexType name="HistoryChangeListElementType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+         
