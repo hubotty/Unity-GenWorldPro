@@ -87,4 +87,10 @@
   <xs:element name="HistoryChangeListElement" substitutionGroup="engine:VisualElement" xmlns:q4="Unity.Cloud.Collaborate.Components.ChangeListEntries" type="q4:HistoryChangeListElementType" />
   <xs:complexType name="ToggleableChangeListElementType">
     <xs:complexContent mixed="false">
-      <xs:restriction base="en
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:a
