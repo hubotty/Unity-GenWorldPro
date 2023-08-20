@@ -21,4 +21,11 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="AdapterListView" substitutionGroup="engine:VisualElement" xmlns:q1="Unit
+  <xs:element name="AdapterListView" substitutionGroup="engine:VisualElement" xmlns:q1="Unity.Cloud.Collaborate.Components" type="q1:AdapterListViewType" />
+  <xs:complexType name="AlertBoxType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute defau
