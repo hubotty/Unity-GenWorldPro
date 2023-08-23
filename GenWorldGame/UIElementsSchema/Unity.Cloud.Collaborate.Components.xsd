@@ -42,4 +42,9 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="Aler
+  <xs:element name="AlertBox" substitutionGroup="engine:VisualElement" xmlns:q2="Unity.Cloud.Collaborate.Components" type="q2:AlertBoxType" />
+  <xs:complexType name="BetterTextFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:Visu
