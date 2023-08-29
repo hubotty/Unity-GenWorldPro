@@ -68,4 +68,11 @@
         <xs:attribute default="" name="text" type="xs:string" use="optional" />
         <xs:attribute default="false" name="readonly" type="xs:boolean" use="optional" />
         <xs:attribute default="false" name="multiline" type="xs:boolean" use="optional" />
-        <xs:attribute default="" name="placeholder" type="xs:stri
+        <xs:attribute default="" name="placeholder" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BetterTextField" substitutionGroup="engine:VisualElement" xmlns:q3="Unity.Cloud.Collaborate.Components" type="q3:BetterTextFieldType" />
+  <xs:complexType name="ChangesGroupHeaderType">
+    <xs:complexContent mixed="f
