@@ -89,4 +89,11 @@
         <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
         <xs:attribute default="" name="class" type="xs:string" use="optional" />
         <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
-        <xs:attribute default="" name="style" type="xs:string" use="optional
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ChangesGroupHeader" substitutionGroup="engine:VisualElement" xmlns:q4="Unity.Cloud.Collaborate.Components" type="q4:ChangesGroupHeaderType" />
+  <xs:complexType name="ErrorPageViewType">
+    <xs:complexContent m
