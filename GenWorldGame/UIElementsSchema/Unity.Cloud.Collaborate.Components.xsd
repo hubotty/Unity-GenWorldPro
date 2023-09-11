@@ -160,4 +160,10 @@
   <xs:element name="IconButton" substitutionGroup="engine:VisualElement" xmlns:q7="Unity.Cloud.Collaborate.Components" type="q7:IconButtonType" />
   <xs:complexType name="IconTextButtonType">
     <xs:complexContent mixed="false">
-      <xs:r
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Po
