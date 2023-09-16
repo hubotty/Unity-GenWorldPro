@@ -180,4 +180,11 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="IconTextButton" substitutionGroup="engine:VisualElement" xmlns:q8="Unity.Cloud.Collaborate.Components" type="q8:IconTextButtonType" />
-  <xs:complexType na
+  <xs:complexType name="ListNoticeType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="" n
