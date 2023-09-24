@@ -242,4 +242,10 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="ProgressView" substitution
+  <xs:element name="ProgressView" substitutionGroup="engine:VisualElement" xmlns:q11="Unity.Cloud.Collaborate.Components" type="q11:ProgressViewType" />
+  <xs:complexType name="SearchBarType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        <
