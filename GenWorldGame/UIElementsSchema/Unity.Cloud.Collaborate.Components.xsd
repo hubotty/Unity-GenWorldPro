@@ -263,4 +263,11 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="SearchBar" substitutionGroup="engine:VisualElement"
+  <xs:element name="SearchBar" substitutionGroup="engine:VisualElement" xmlns:q12="Unity.Cloud.Collaborate.Components" type="q12:SearchBarType" />
+  <xs:complexType name="TabViewType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribut
