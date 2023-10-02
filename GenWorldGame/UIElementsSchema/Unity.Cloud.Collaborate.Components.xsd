@@ -296,4 +296,8 @@
         <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
         <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
         <xs:attribute default="" name="class" type="xs:string" use="optional" />
-        <xs:attribute default="" name="content-container" type="xs:string" use="opt
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="text" type="xs:string" use="optional" />
+        <xs:attribute default="false" name="display-tooltip-when-elided" type="xs:boolean" use="optional" />
