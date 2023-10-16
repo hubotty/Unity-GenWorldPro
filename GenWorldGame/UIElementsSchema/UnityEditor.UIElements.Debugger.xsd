@@ -19,4 +19,9 @@
         <xs:attribute default="" name="style" type="xs:string" use="optional" />
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
         <xs:attribute default="" name="label" type="xs:string" use="optional" />
-        
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EventTypeSelectField" substitutionGroup="engine:VisualElement" xmlns:q1="UnityEditor.UIElements.Debugger" type="q1:EventTypeSelectFieldType" />
+</xs:schema>
