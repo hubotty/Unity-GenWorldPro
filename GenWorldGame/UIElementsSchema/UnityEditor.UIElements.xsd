@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:editor="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" xmlns="UnityEditor.PackageManager.UI" elementFormDefault="qualified" targetNamespace="UnityEditor.UIElements" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="UnityEngine.UIElements.xsd" namespace="UnityEngine.UIElements" />
-  <xs:simpleType name="PropertyControl_val
+  <xs:simpleType name="PropertyControl_value-type_Type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Long" />
+      <xs:enumeration value="Double" />
+      <xs:enumeration value="Int" />
+      <xs:enumeration value="Float" />
+      <xs:enumeration value="String" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PropertyControlType">
+    <xs:complexContent mi
