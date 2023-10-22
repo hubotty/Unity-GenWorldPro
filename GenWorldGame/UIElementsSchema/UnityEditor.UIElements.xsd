@@ -25,4 +25,9 @@
         <xs:attribute default="true" name="focusable" type="xs:boolean" use="optional" />
         <xs:attribute default="" name="class" type="xs:string" use="optional" />
         <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
-        <xs:attribute default="" name="style" type="xs:string" use=
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="label" type="xs:string" use="optional" />
+        <xs:attribute name="value-type" type="editor:PropertyControl_value-type_Type" use="required" />
+        <xs:attribute default="" name="value" type="xs:string" use="optional" />
+        <xs:anyAttribu
