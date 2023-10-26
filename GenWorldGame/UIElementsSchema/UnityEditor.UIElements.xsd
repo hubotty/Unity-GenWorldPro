@@ -30,4 +30,12 @@
         <xs:attribute default="" name="label" type="xs:string" use="optional" />
         <xs:attribute name="value-type" type="editor:PropertyControl_value-type_Type" use="required" />
         <xs:attribute default="" name="value" type="xs:string" use="optional" />
-        <xs:anyAttribu
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PropertyControl" substitutionGroup="engine:VisualElement" type="editor:PropertyControlType" />
+  <xs:complexType name="VisualSplitterType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:s
