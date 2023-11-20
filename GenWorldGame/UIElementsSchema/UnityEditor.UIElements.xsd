@@ -142,4 +142,10 @@
         <xs:anyAttribute processContents="lax" />
       </xs:restriction>
     </xs:complexContent>
-  </xs:complexT
+  </xs:complexType>
+  <xs:element name="ToolbarSpacer" substitutionGroup="engine:VisualElement" type="editor:ToolbarSpacerType" />
+  <xs:complexType name="ToolbarMenuType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <x
