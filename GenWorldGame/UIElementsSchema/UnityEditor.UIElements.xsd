@@ -209,4 +209,10 @@
   <xs:element name="ToolbarPopupSearchField" substitutionGroup="engine:VisualElement" type="editor:ToolbarPopupSearchFieldType" />
   <xs:complexType name="ToolbarBreadcrumbsType">
     <xs:complexContent mixed="false">
-      <xs:restriction bas
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Po
