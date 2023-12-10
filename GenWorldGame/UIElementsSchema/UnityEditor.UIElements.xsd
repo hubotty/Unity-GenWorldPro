@@ -251,4 +251,11 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="PropertyField" substitutionGroup="engine:VisualElement" type="editor:PropertyFieldType" />
-  <xs:com
+  <xs:complexType name="InspectorElementType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute 
