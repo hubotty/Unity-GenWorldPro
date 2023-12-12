@@ -272,4 +272,11 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:ele
+  <xs:element name="InspectorElement" substitutionGroup="engine:VisualElement" type="editor:InspectorElementType" />
+  <xs:complexType name="FloatFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+     
