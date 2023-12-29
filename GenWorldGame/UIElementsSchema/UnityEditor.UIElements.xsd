@@ -343,4 +343,12 @@
         <xs:attribute default="" name="label" type="xs:string" use="optional" />
         <xs:attribute default="0" name="value" type="xs:int" use="optional" />
         <xs:attribute default="false" name="readonly" type="xs:boolean" use="optional" />
-        
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IntegerField" substitutionGroup="engine:VisualElement" type="editor:IntegerFieldType" />
+  <xs:complexType name="LongFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+  
