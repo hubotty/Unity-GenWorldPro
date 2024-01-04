@@ -370,4 +370,11 @@
         <xs:attribute default="false" name="readonly" type="xs:boolean" use="optional" />
         <xs:anyAttribute processContents="lax" />
       </xs:restriction>
-    </xs:complexConte
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LongField" substitutionGroup="engine:VisualElement" type="editor:LongFieldType" />
+  <xs:complexType name="CurveFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref
