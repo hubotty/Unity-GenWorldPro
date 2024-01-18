@@ -415,4 +415,12 @@
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
         <xs:attribute default="" name="label" type="xs:string" use="optional" />
         <xs:attribute default="true" name="allow-scene-objects" type="xs:boolean" use="optional" />
-        <xs:attribute default="null" name="type" ty
+        <xs:attribute default="null" name="type" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObjectField" substitutionGroup="engine:VisualElement" type="editor:ObjectFieldType" />
+  <xs:complexType name="ColorFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="
