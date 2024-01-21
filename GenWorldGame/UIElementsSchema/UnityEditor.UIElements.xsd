@@ -441,4 +441,10 @@
         <xs:attribute default="" name="label" type="xs:string" use="optional" />
         <xs:attribute default="RGBA(0.000, 0.000, 0.000, 1.000)" name="value" type="xs:string" use="optional" />
         <xs:attribute default="true" name="show-eye-dropper" type="xs:boolean" use="optional" />
-        <xs:
+        <xs:attribute default="true" name="show-alpha" type="xs:boolean" use="optional" />
+        <xs:attribute default="false" name="hdr" type="xs:boolean" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ColorField" substitutionGroup="engine:VisualElemen
