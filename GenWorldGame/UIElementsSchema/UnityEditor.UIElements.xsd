@@ -447,4 +447,11 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="ColorField" substitutionGroup="engine:VisualElemen
+  <xs:element name="ColorField" substitutionGroup="engine:VisualElement" type="editor:ColorFieldType" />
+  <xs:complexType name="EnumFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" u
