@@ -473,4 +473,11 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="EnumField" substitutionGroup="engine:VisualElement" 
+  <xs:element name="EnumField" substitutionGroup="engine:VisualElement" type="editor:EnumFieldType" />
+  <xs:complexType name="MaskFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="op
