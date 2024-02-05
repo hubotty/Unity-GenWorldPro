@@ -500,4 +500,10 @@
   </xs:complexType>
   <xs:element name="MaskField" substitutionGroup="engine:VisualElement" type="editor:MaskFieldType" />
   <xs:complexType name="LayerMaskFieldType">
-    <xs:complexConte
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:stri
