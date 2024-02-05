@@ -492,4 +492,12 @@
         <xs:attribute default="" name="style" type="xs:string" use="optional" />
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
         <xs:attribute default="" name="label" type="xs:string" use="optional" />
-        <xs:attribute default="" name="choices" type="
+        <xs:attribute default="" name="choices" type="xs:string" use="optional" />
+        <xs:attribute default="0" name="value" type="xs:int" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MaskField" substitutionGroup="engine:VisualElement" type="editor:MaskFieldType" />
+  <xs:complexType name="LayerMaskFieldType">
+    <xs:complexConte
