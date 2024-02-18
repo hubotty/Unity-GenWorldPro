@@ -546,4 +546,12 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="LayerField" substitutionGroup="engi
+  <xs:element name="LayerField" substitutionGroup="engine:VisualElement" type="editor:LayerFieldType" />
+  <xs:complexType name="TagFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        
