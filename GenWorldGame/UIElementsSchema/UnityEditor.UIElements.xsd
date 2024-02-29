@@ -596,4 +596,9 @@
   <xs:element name="GradientField" substitutionGroup="engine:VisualElement" type="editor:GradientFieldType" />
   <xs:complexType name="EnumFlagsFieldType">
     <xs:complexContent mixed="false">
-      <
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" /
