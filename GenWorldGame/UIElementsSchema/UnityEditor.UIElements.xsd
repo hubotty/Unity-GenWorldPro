@@ -588,4 +588,12 @@
         <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
         <xs:attribute default="" name="style" type="xs:string" use="optional" />
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
-        <xs:attribute default="" name="label" 
+        <xs:attribute default="" name="label" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GradientField" substitutionGroup="engine:VisualElement" type="editor:GradientFieldType" />
+  <xs:complexType name="EnumFlagsFieldType">
+    <xs:complexContent mixed="false">
+      <
