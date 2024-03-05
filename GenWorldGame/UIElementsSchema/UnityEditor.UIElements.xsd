@@ -619,4 +619,12 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="EnumFlagsField" substitutionGroup="engine:VisualElement" type="editor:EnumF
+  <xs:element name="EnumFlagsField" substitutionGroup="engine:VisualElement" type="editor:EnumFlagsFieldType" />
+  <xs:complexType name="RectFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+     
