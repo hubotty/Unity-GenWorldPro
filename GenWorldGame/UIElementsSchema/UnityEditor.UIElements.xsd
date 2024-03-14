@@ -646,4 +646,11 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:
+  <xs:element name="RectField" substitutionGroup="engine:VisualElement" type="editor:RectFieldType" />
+  <xs:complexType name="Vector2FieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:
