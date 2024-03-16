@@ -672,4 +672,11 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="Vector2Field" substitutionGroup="engine:VisualElement" type="editor:Vector2FieldType" />
-  <xs:complexType na
+  <xs:complexType name="Vector3FieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute d
