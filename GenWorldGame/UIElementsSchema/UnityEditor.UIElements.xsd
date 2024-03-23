@@ -691,4 +691,12 @@
         <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
         <xs:attribute default="" name="label" type="xs:string" use="optional" />
         <xs:attribute default="0" name="x" type="xs:float" use="optional" />
-        <xs:attribute default="0" name="y" type="xs:float" use
+        <xs:attribute default="0" name="y" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="z" type="xs:float" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Vector3Field" substitutionGroup="engine:VisualElement" type="editor:Vector3FieldType" />
+  <xs:complexType name="Vector4FieldType">
+    <xs:complexConten
