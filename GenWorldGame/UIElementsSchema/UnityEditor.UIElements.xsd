@@ -745,4 +745,8 @@
         <xs:attribute default="" name="label" type="xs:string" use="optional" />
         <xs:attribute default="0" name="cx" type="xs:float" use="optional" />
         <xs:attribute default="0" name="cy" type="xs:float" use="optional" />
-        <x
+        <xs:attribute default="0" name="cz" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="ex" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="ey" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="ez" type="xs:float" use="optional" />
+        <xs:anyAttrib
