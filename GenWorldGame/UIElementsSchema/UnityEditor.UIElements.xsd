@@ -749,4 +749,12 @@
         <xs:attribute default="0" name="ex" type="xs:float" use="optional" />
         <xs:attribute default="0" name="ey" type="xs:float" use="optional" />
         <xs:attribute default="0" name="ez" type="xs:float" use="optional" />
-        <xs:anyAttrib
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BoundsField" substitutionGroup="engine:VisualElement" type="editor:BoundsFieldType" />
+  <xs:complexType name="RectIntFieldType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+      
