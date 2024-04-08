@@ -774,4 +774,12 @@
         <xs:attribute default="" name="label" type="xs:string" use="optional" />
         <xs:attribute default="0" name="x" type="xs:int" use="optional" />
         <xs:attribute default="0" name="y" type="xs:int" use="optional" />
-        <xs:attribute default="0" name="w" type="xs:int" use="optional" 
+        <xs:attribute default="0" name="w" type="xs:int" use="optional" />
+        <xs:attribute default="0" name="h" type="xs:int" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RectIntField" substitutionGroup="engine:VisualElement" type="editor:RectIntFieldType" />
+  <xs:complexType name="Vector2IntFieldType">
+    <xs:complexConten
