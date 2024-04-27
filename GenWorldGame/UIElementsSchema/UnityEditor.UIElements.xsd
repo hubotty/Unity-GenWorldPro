@@ -848,4 +848,9 @@
         <xs:attribute default="" name="class" type="xs:string" use="optional" />
         <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
         <xs:attribute default="" name="style" type="xs:string" use="optional" />
-        <xs:attribute default="" n
+        <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="label" type="xs:string" use="optional" />
+        <xs:attribute default="0" name="px" type="xs:int" use="optional" />
+        <xs:attribute default="0" name="py" type="xs:int" use="optional" />
+        <xs:attribute default="0" name="pz" type="xs:int" use="optional" />
+        <xs:attribute default="0" name="sx" typ
