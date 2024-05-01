@@ -853,4 +853,11 @@
         <xs:attribute default="0" name="px" type="xs:int" use="optional" />
         <xs:attribute default="0" name="py" type="xs:int" use="optional" />
         <xs:attribute default="0" name="pz" type="xs:int" use="optional" />
-        <xs:attribute default="0" name="sx" typ
+        <xs:attribute default="0" name="sx" type="xs:int" use="optional" />
+        <xs:attribute default="0" name="sy" type="xs:int" use="optional" />
+        <xs:attribute default="0" name="sz" type="xs:int" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BoundsIntField" substitutionGroup="engine:
