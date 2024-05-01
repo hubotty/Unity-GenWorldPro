@@ -860,4 +860,11 @@
       </xs:restriction>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="BoundsIntField" substitutionGroup="engine:
+  <xs:element name="BoundsIntField" substitutionGroup="engine:VisualElement" type="editor:BoundsIntFieldType" />
+  <xs:complexType name="ProgressBarType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="x
